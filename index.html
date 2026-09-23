@@ -4,14 +4,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inmobiliaria Nova</title>
+    <meta name="description" content="PixelForge: experiencias, mundos y momentos destacados del universo gaming.">
+    <title>PixelForge | Gaming Experience</title>
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,500;0,9..144,600;1,9..144,400&family=Inter:wght@400;500;600&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap"
         rel="stylesheet">
 
     <link rel="stylesheet" href="./styles.css">
@@ -19,14 +20,16 @@
 
 <body>
 
-    <header class="site-header">
-        <div class="header-bar"></div>
-
-        <nav class="navbar navbar-expand-lg navbar-light">
+    <header class="site-header" id="inicio">
+        <nav class="navbar navbar-expand-lg navbar-dark">
             <div class="container">
 
-                <a class="navbar-brand brand " href="#">
-                    Nova
+                <a class="navbar-brand brand" href="#inicio" aria-label="PixelForge - Inicio">
+                    <span class="brand-symbol" aria-hidden="true">
+                        <span></span>
+                        <span></span>
+                    </span>
+                    <span class="brand-name">PixelForge</span>
                 </a>
 
                 <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse"
@@ -38,24 +41,22 @@
                 <div class="collapse navbar-collapse" id="navbarMain">
                     <ul class="navbar-nav ms-auto align-items-lg-center">
                         <li class="nav-item">
-                            <a class="nav-link" href="#inicio">Inicio</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#propiedades">Propiedades</a>
+                            <a class="nav-link active" href="#inicio">Inicio</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#galeria">Galería</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#nosotros">Nosotros</a>
+                            <a class="nav-link" href="#universo">Universo</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#contacto">Contacto</a>
+                            <a class="nav-link" href="#comunidad">Comunidad</a>
                         </li>
                     </ul>
 
-                    <a href="#contacto" class="header-cta ms-lg-4">
-                        Solicitar información
+                    <a href="#galeria" class="header-cta ms-lg-4">
+                        Explorar
+                        <span aria-hidden="true">↗</span>
                     </a>
                 </div>
             </div>
@@ -76,7 +77,8 @@
                     <!-- Tarjeta 1 -->
                     <div class="col-12 col-md-6 col-lg-4">
                         <div class="card bg-secondary text-white border-0 shadow h-100">
-                            <img src="https://picsum.photos/600/400?random=1" class="card-img-top" alt="Captura 1 del videojuego">
+                            <img src="https://picsum.photos/600/400?random=1" class="card-img-top"
+                                alt="Captura 1 del videojuego">
                             <div class="card-body">
                                 <h5 class="card-title">Mundo Abierto</h5>
                                 <p class="card-text">Explora mapas extensos llenos de secretos y enemigos.</p>
@@ -87,7 +89,8 @@
                     <!-- Tarjeta 2 -->
                     <div class="col-12 col-md-6 col-lg-4">
                         <div class="card bg-secondary text-white border-0 shadow h-100">
-                            <img src="https://picsum.photos/600/400?random=2" class="card-img-top" alt="Captura 2 del videojuego">
+                            <img src="https://picsum.photos/600/400?random=2" class="card-img-top"
+                                alt="Captura 2 del videojuego">
                             <div class="card-body">
                                 <h5 class="card-title">Combate Épico</h5>
                                 <p class="card-text">Enfréntate a jefes con mecánicas desafiantes.</p>
@@ -98,7 +101,8 @@
                     <!-- Tarjeta 3 -->
                     <div class="col-12 col-md-6 col-lg-4">
                         <div class="card bg-secondary text-white border-0 shadow h-100">
-                            <img src="https://picsum.photos/600/400?random=3" class="card-img-top" alt="Captura 3 del videojuego">
+                            <img src="https://picsum.photos/600/400?random=3" class="card-img-top"
+                                alt="Captura 3 del videojuego">
                             <div class="card-body">
                                 <h5 class="card-title">Personajes</h5>
                                 <p class="card-text">Personaliza y mejora las habilidades de tu héroe.</p>
