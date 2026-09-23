@@ -1,0 +1,125 @@
+:root {
+  --bg: #f6f4ef;
+  --text: #13212f;
+  --muted: #667079;
+  --line: #ddd8cc;
+  --accent: #13304d;
+  --accent-soft: #2c4a68;
+  --brass: #a9824f;
+  --white: #ffffff;
+
+  --font-display: "Fraunces", Georgia, serif;
+  --font-body: "Inter", Arial, Helvetica, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-body);
+  background: var(--bg);
+  color: var(--text);
+}
+
+/* HEADER / NAVBAR */
+
+.site-header {
+  min-height: 100vh;
+  background: var(--bg);
+}
+
+.header-bar {
+  height: 4px;
+  background: var(--accent);
+}
+
+.navbar {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid var(--line);
+}
+
+.brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font-family: var(--font-display);
+  font-size: 1.7rem;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  color: var(--text) !important;
+  text-decoration: none;
+}
+
+.brand-mark {
+  width: 9px;
+  height: 9px;
+  background: var(--brass);
+}
+
+.navbar-nav .nav-link {
+  color: var(--muted) !important;
+  font-size: 0.94rem;
+  font-weight: 500;
+  margin-left: 30px;
+  padding: 4px 0 !important;
+  border-bottom: 1px solid transparent;
+  transition: color 0.2s ease, border-color 0.2s ease;
+}
+
+.navbar-nav .nav-link:hover {
+  color: var(--text) !important;
+  border-bottom-color: var(--brass);
+}
+
+.header-cta {
+  text-decoration: none;
+  color: var(--text);
+  font-size: 0.9rem;
+  font-weight: 500;
+  margin-left: 34px;
+  padding: 11px 20px;
+  border: 1px solid var(--text);
+  white-space: nowrap;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+.header-cta:hover {
+  background: var(--text);
+  color: var(--white);
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 991px) {
+  .navbar-collapse {
+    padding-top: 20px;
+  }
+
+  .navbar-nav .nav-link {
+    margin-left: 0;
+    padding-left: 0;
+  }
+
+  .header-cta {
+    display: inline-block;
+    margin-left: 0;
+    margin-top: 15px;
+  }
+
+  .hero {
+    padding-top: 40px;
+  }
+}
+
+@media (max-width: 576px) {
+  .hero h1 {
+    font-size: 2.5rem;
+  }
+
+  .hero-text {
+    font-size: 1rem;
+  }
+}
